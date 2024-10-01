@@ -2,8 +2,7 @@
 
 with customer as (
 select *
-from {{ref('customer_test')}}
-where id = 1 
+from training.dbt_prasad.customer_test
 )
 
 select * from customer
