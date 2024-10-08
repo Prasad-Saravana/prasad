@@ -4,7 +4,7 @@
     )
 }}
 
-with src_Hockey as 
+with src_TEAMS as 
 (select * from {{ source('Hockey_Table', 'TEAMS') }})
 
-select * from src_Hockey
+select * from src_TEAMS
