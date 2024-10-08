@@ -7,3 +7,6 @@ sources:
     tables:
       - name: TEAMS
       - name: SCORING
+      - name: MASTER
+      - name: HOF
+      - name: GOALIES

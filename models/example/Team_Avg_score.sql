@@ -13,5 +13,5 @@ ON T.TMID = S.TMID
 group by t.name,s.tmid
 )
 
-select * from Team_Avg_score
+select * from Team_Avg_score   
 
