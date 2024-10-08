@@ -8,5 +8,5 @@ sources:
       - name: TEAMS
       - name: SCORING
       - name: MASTER
-      - name: HOF
+      - name: COACHES
       - name: GOALIES
