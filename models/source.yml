@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+   - name: Coaches_Table
+     database: TRAINING
+     schema: DBT_PRASAD
+     tables:
+      - name: coaches_snapshot
