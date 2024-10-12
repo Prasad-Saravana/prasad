@@ -1,0 +1,14 @@
+
+version: 2
+
+sources:
+  - name: Hockey_Table
+    database: HOCKEYDB
+    schema: HOCKEY  
+    tables:
+      - name: TEAMS
+      - name: SCORING
+      - name: MASTER
+      - name: COACHES
+      - name: GOALIES
+ 

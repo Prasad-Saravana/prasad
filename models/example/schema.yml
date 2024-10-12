@@ -29,3 +29,9 @@ models:
       columns:
           - name: id
           - name: name
+    - name: teams
+      description: "Hockey"
+      columns:
+          - name: name
+          - name: g
+          - name: year
