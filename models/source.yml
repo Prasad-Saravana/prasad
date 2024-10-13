@@ -7,3 +7,8 @@ sources:
      tables:
       - name: coaches_snapshot
       - name: Coach_Snap_check
+   - name: Inc
+     database: TRAINING
+     schema: DBT_PRASAD
+     tables:
+      - name: Prod
