@@ -12,3 +12,7 @@ sources:
      schema: DBT_PRASAD
      tables:
       - name: Prod
+      - name: CUSTOMER_TEST
+      - name: INC_PRE_POST
+      - name: prod_jing_if_Block
+      - name: customer_jinja_set

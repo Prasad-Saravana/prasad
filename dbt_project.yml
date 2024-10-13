@@ -41,3 +41,10 @@ models:
 
 seeds:
   my_new_project:  dbt_training
+
+
+# dbt_project.yml
+vars:
+  my_variable: NOTFOUND
+  col: DESCRIPTION
+  val: Fruit
