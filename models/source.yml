@@ -6,3 +6,4 @@ sources:
      schema: DBT_PRASAD
      tables:
       - name: coaches_snapshot
+      - name: Coach_Snap_check
