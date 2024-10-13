@@ -45,5 +45,6 @@ seeds:
 
 # dbt_project.yml
 vars:
-   col: DESCRIPTION
-   val: Fruit
+  my_variable: NOTFOUND
+  col: DESCRIPTION
+  val: Fruit
