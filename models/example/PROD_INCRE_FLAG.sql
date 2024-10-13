@@ -4,7 +4,7 @@
 
 WITH source_data AS (
     SELECT
-        *
+        ROW_NUMBER() OVER (PARTITION BY id ORDER BY updated_at DESC) AS rn, *
     FROM {{ source('Inc', 'Prod') }} 
     WHERE current_flag = 'Y' OR updated_at >= (SELECT MAX(updated_at) FROM {{ this }})  -- Handle case when no records exist
 ),
@@ -16,7 +16,7 @@ updated_records AS (
         s.name,
         s.description,
         s.updated_at,
-        ROW_NUMBER() OVER (PARTITION BY s.id ORDER BY s.updated_at DESC) AS rn
+        s.rn
     FROM source_data s
     JOIN {{ this }} e ON s.id = e.id
     WHERE e.current_flag = 'Y' 
@@ -26,7 +26,7 @@ updated_records AS (
 SELECT
     s.id,
     CASE
-        WHEN u.rn = 1 THEN u.current_flag  -- Use the updated flag if it's the latest version
+        WHEN s.rn = 1 THEN u.current_flag  -- Use the updated flag if it's the latest version
         ELSE 'Y'  -- Keep 'Y' for unchanged records
     END AS current_flag,
     s.name,

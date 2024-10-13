@@ -12,3 +12,4 @@ sources:
      schema: DBT_PRASAD
      tables:
       - name: Prod
+      - name: CUSTOMER_TEST
