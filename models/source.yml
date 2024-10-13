@@ -13,3 +13,4 @@ sources:
      tables:
       - name: Prod
       - name: CUSTOMER_TEST
+      - name: INC_PRE_POST
