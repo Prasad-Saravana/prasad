@@ -45,4 +45,5 @@ seeds:
 
 # dbt_project.yml
 vars:
-  my_variable: NOTFOUND # Default value can be set here
+   col: DESCRIPTION
+   val: Fruit
