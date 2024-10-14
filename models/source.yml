@@ -17,3 +17,4 @@ sources:
       - name: prod_jing_if_Block
       - name: customer_jinja_set
       - name: product
+      - name: DATE_VAL
