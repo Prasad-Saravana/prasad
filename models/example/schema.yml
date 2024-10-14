@@ -48,3 +48,8 @@ models:
         tests:
           - valid_date_test:
               severity: warn
+      - name: reconciliation
+        description: "Description of your target table."
+        tests:
+         - reconciliation_test
+
