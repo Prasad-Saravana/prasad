@@ -40,4 +40,16 @@ models:
       tests:
         - prod_generic_test
 
-    
+    - name: date_val_generic
+      description: "Description of your model."
+      columns:
+      - name: UPDATED_AT
+        description: "Description of the date column."
+        tests:
+          - valid_date_test:
+              severity: warn
+      - name: reconciliation
+        description: "Reconciliation Test."
+        tests:
+         - reconciliation_test
+
