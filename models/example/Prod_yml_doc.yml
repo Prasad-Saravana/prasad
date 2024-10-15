@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: Product_table
+    description: " This table conatins grocery items"
+    columns:
+      - name: id
+        description: "Unique identifier for each product."
+      - name: name
+        description: "Full name of the grocery item."
+      - name: description
+        description: "Descibe the grocery item."
